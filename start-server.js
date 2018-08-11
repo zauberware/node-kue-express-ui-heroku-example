@@ -26,6 +26,8 @@ kue.createQueue({
   redis: redisOptions
 });
 
+
+
 // include logger
 var expressLogging = require('express-logging'),
     logger = require('logops');
@@ -69,6 +71,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }) );
 
 
+// any kue related settings can go here
+kue.app.set('title', 'Lenzio Jobs');
 app.use(kue.app);
 kueUiExpress(app, '/kue/', '/kue-api');
 // // Mount kue JSON api
