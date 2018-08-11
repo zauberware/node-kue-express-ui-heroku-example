@@ -1,6 +1,17 @@
 {
   "name": "node-kue-express-ui-heroku-example",
-  "version": "0.0.1",
+  "description": "Kue Express UI running on heroku + redis",
+  "version": "0.0.2",
+  "keywords": [
+    "node",
+    "express",
+    "heroku",
+    "express-kue-ui",
+    "kue",
+    "kue-ui",
+    "background jobs",
+    "delayed jobs"
+  ],
   "private": true,
   "babel": {
     "presets": [

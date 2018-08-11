@@ -1,0 +1,33 @@
+{
+  "name": "node-kue-express-ui-heroku-example",
+  "description": "Kue Express UI running on heroku + redis",
+  "keywords": [
+    "node",
+    "express",
+    "heroku",
+    "express-kue-ui",
+    "kue",
+    "kue-ui",
+    "background jobs",
+    "delayed jobs"
+  ],
+  "website": "https://www.zauberware.com/",
+  "repository": "https://github.com/zauberware/node-kue-express-ui-heroku-example",
+  "env": {
+    "USERNAME": {
+      "description": "The user to pass the HTTP Authentication",
+      "value": "admin"
+    },
+    "PASSWORD": {
+      "description": "Password for HTTP Authentication",
+      "generator": "secret"
+    },
+  },
+  "image": "heroku/node",
+  "addons": [
+    "heroku-redis",
+    {
+      "plan": "heroku-redis:hobby-dev"
+    },
+  ],
+}
