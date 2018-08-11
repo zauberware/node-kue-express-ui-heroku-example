@@ -2,6 +2,8 @@
 
 You might use [kue](https://github.com/Automattic/kue) in your application to run jobs in the background. [kue-ui-express](https://github.com/stonecircle/kue-ui-express) provides a nice UI to monitor those jobs. This example is a ready to go monitoring app which can be deployed to Heroku easily. 
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zauberware/node-kue-express-ui-heroku-example/tree/master)
+
 ## Dependencies
 It uses `kue-ui-express`, `basic-auth` and `redis`!
 
@@ -42,9 +44,12 @@ or with Procfile and `heroku-local` cli feature:
 
 ## Installation on heroku
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zauberware/node-kue-express-ui-heroku-example/tree/master)
+
+Or manually:
+
 1. Create a new app on heroku.
 2. Add Heroku Redis or RedisToGo. (If you use RedisToGo you have to change the ENV var in the script.) Note that this app is only the monitoring application. If you have a existing Redis isntance you have to set the link oni the REDIS_URL env var.
 3. Be sure all environment variables are set on heroku
 4. Add heroku as a remote repository
 5. Push to master and deploy the app
-
