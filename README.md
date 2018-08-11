@@ -53,3 +53,9 @@ Or manually:
 3. Be sure all environment variables are set on heroku
 4. Add heroku as a remote repository
 5. Push to master and deploy the app
+
+
+### Security
+To secure the connection between redis and your dynos you have setup the Stunnel Buildpack. Read more here https://devcenter.heroku.com/articles/securing-heroku-redis
+
+Installation instruction for buildkit: https://github.com/heroku/heroku-buildpack-redis
