@@ -1,1 +1,1 @@
-web: babel-node start-server.js
+web: bin/start-stunnel babel-node start-server.js
