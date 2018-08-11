@@ -7,7 +7,7 @@ let auth = require('basic-auth');
 let kueUiExpress = require('kue-ui-express');
 
 kue.redis.createClient = function() {
-  var redisUrl = url.parse(process.env.REDISTOGO_URL)
+  var redisUrl = url.parse(process.env.REDIS_URL)
     , client = redis.createClient(redisUrl.port, redisUrl.hostname);
   if (redisUrl.auth) {
       client.auth(redisUrl.auth.split(":")[1]);
