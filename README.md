@@ -1,6 +1,9 @@
 # Node Kue Express UI Example running on Heroku
 
-You might use kue in your application to run jobs in the background. `kue-ui-express` provides a nice UI to monitor the jobs. This example app runs on heroku! It uses `kue-ui-express`, `basic-auth` and `redis`!
+You might use [kue](https://github.com/Automattic/kue) in your application to run jobs in the background. [kue-ui-express](https://github.com/stonecircle/kue-ui-express) provides a nice UI to monitor those jobs. This example is a ready to go monitoring app which can be deployed to Heroku easily. 
+
+## Dependencies
+It uses `kue-ui-express`, `basic-auth` and `redis`!
 
 
 ## Install App on localhost
@@ -41,5 +44,6 @@ or with Procfile and `heroku-local` cli feature:
 
 1. Create a new app on heroku.
 2. Add Heroku Redis or RedisToGo. (If you use RedisToGo you have to change the ENV var in the script.)
-3. Add heroku as a remote repository
-4. Push to master
+3. Be sure all environment variables are set on heroku
+4. Add heroku as a remote repository
+5. Push to master and deploy the app
