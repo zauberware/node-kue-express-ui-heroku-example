@@ -12,6 +12,7 @@
     "delayed jobs"
   ],
   "website": "https://www.zauberware.com/",
+  "logo": "https://www.zauberware.com//img/logo-full--white.svg",
   "repository": "https://github.com/zauberware/node-kue-express-ui-heroku-example",
   "env": {
     "USERNAME": {
@@ -27,7 +28,8 @@
   "addons": [
     "heroku-redis",
     {
-      "plan": "heroku-redis:hobby-dev"
+      "plan": "heroku-redis:hobby-dev",
+      "as": "REDIS"
     },
   ],
 }

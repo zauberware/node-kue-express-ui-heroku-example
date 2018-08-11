@@ -44,6 +44,8 @@
     "logops": "^2.1.0",
     "reds": "^1.0.0"
   },
+  "author": "zauberware technologies",
+  "license": "MIT",
   "scripts": {
     "start": "babel-node start-server.js"
   }
