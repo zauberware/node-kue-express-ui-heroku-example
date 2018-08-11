@@ -28,7 +28,7 @@
   "addons": [
     "heroku-redis",
     {
-      "plan": "hobby-dev",
+      "plan": "heroku-redis:hobby-dev",
     },
   ],
 }
