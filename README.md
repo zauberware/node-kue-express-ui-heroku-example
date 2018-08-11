@@ -43,7 +43,8 @@ or with Procfile and `heroku-local` cli feature:
 ## Installation on heroku
 
 1. Create a new app on heroku.
-2. Add Heroku Redis or RedisToGo. (If you use RedisToGo you have to change the ENV var in the script.)
+2. Add Heroku Redis or RedisToGo. (If you use RedisToGo you have to change the ENV var in the script.) Note that this app is only the monitoring application. If you have a existing Redis isntance you have to set the link oni the REDIS_URL env var.
 3. Be sure all environment variables are set on heroku
 4. Add heroku as a remote repository
 5. Push to master and deploy the app
+
