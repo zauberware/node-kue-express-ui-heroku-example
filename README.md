@@ -57,3 +57,5 @@ Or manually:
 
 ### Security
 To secure the connection between redis and your dynos you have setup the Stunnel Buildpack. Read more here https://devcenter.heroku.com/articles/securing-heroku-redis
+
+Installation instruction for buildkit: https://github.com/heroku/heroku-buildpack-redis
