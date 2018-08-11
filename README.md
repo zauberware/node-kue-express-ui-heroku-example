@@ -37,9 +37,9 @@ or
 
 `$ babel-node start-server.js`
 
-or with Procfile and `heroku-local` cli feature:
+or with Procfile:
 
-`$ heroku local`
+`$ foreman start -f Procfile.dev`
 
 
 ## Installation on heroku
