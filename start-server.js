@@ -26,8 +26,6 @@ kue.createQueue({
   redis: redisOptions
 });
 
-
-
 // include logger
 var expressLogging = require('express-logging'),
     logger = require('logops');
@@ -41,12 +39,14 @@ const app = express();
 app.use(expressLogging(logger));
 app.use('*', cors({ credentials: true }));
 
+
 // Use SSL in production environments
 if(process.env.NODE_ENV == 'production'){
   app.use(sslRedirect());
 }
 
 
+// wrap all request with baseic-auth
 app.use((req, res, next) => {
   // check if it was access to kue UIs
   let user = auth(req)
