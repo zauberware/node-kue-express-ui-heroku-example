@@ -59,3 +59,5 @@ Or manually:
 To secure the connection between redis and your dynos you have setup the Stunnel Buildpack. Read more here https://devcenter.heroku.com/articles/securing-heroku-redis
 
 Installation instruction for buildkit: https://github.com/heroku/heroku-buildpack-redis
+
+See our branch `tunnel` and see the changes in `Procfile` and `Procfile.dev` https://github.com/zauberware/node-kue-express-ui-heroku-example/tree/tunnel
