@@ -7,6 +7,8 @@ let kue = require('kue');
 let auth = require('basic-auth');
 let kueUiExpress = require('kue-ui-express');
 
+// load dotenv config
+require('dotenv').config();
 
 // Parse REDIS connection URL
 var redisUrl = url.parse(process.env.REDIS_URL);
@@ -30,8 +32,6 @@ kue.createQueue({
 var expressLogging = require('express-logging'),
     logger = require('logops');
 
-// load dotenv config
-require('dotenv').config();
 var sslRedirect = require('heroku-ssl-redirect');
 
 // init express App
